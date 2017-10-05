@@ -16,7 +16,9 @@ class PigLatinizer
     pig_latin
   end
 
-  def to_pig_latin
+  def to_pig_latin(sentence)
+    binding.pry
+
   end
 
 
