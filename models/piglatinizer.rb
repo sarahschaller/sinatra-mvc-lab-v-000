@@ -16,6 +16,9 @@ class PigLatinizer
     pig_latin
   end
 
+  def to_pig_latin
+  end
+
 
 
 end
