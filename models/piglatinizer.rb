@@ -9,7 +9,7 @@ class PigLatinizer
       vowel_index = letters.each_index.detect {|i| vowels.include?(letters[i])}
       first_part = letters.drop(vowel_index)
       second_part = letters.shift(vowel_index)
-      pig_latin = first_part + second_part + "ay"
+      pig_latin = first_part.join("") + second_part.join("") + "ay"
     else
       pig_latin = word + "way"
     end
