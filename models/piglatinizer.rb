@@ -17,8 +17,10 @@ class PigLatinizer
   end
 
   def to_pig_latin(sentence)
-    binding.pry
-
+    words = sentence.split(" ")
+    pig_latin_words = words.collect {|w| piglatinize(w)}
+    pig_latin_sentence = pig_latin_words.join(" ")
+    pig_latin_sentence
   end
 
 
